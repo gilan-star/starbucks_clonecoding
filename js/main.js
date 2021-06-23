@@ -1,3 +1,4 @@
+// SEARCH ICON
 const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
 
@@ -13,4 +14,37 @@ searchInputEl.addEventListener('focus', function () {
 searchInputEl.addEventListener('blur', function () {
     searchEl.classList.remove('focused');
     searchInputEl.setAttribute('placeholder', '');
+});
+
+
+// FADING OUT BADGES WHEN IT IS SCROLLED
+// const badgeEl = document.querySelector('header .badges');
+
+// window.addEventListener('scroll', _.throttle(function () {
+//     console.log(window.scrollY);
+//     if (window.scrollY > 500) {
+//         // hide badge
+//         // gsap.to(요소, 지속시간, 옵션);
+//         gsap.to(badgeEl, .6, {
+//             opacity: 0,
+//             display: 'none'
+//         });
+//     } else {
+//         // show badge
+//         gsap.to(badgeEl, .6, {
+//             opacity: 1,
+//             display: 'block'
+//         });
+//     }
+// }, 300));
+
+
+// FADING IN VISUAL IMAGES IN ORDER
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+
+fadeEls.forEach(function (fadeEl, index) {
+    gsap.to(fadeEl, 1, {
+        delay: (index + 1) * 0.7,
+        opacity: 1
+    });
 });

@@ -24,6 +24,7 @@ body {
 	font-weight: 400;
 	line-height: 1.4;
 	font-family: 'Nanum Gothic', sans-serif;
+	height: 3000px;
 }
 
 img {
@@ -40,11 +41,30 @@ a {
 	position: relative;
 }
 
+.btn {
+	display: block;
+	width: 125px;
+	padding: 7px 0;
+	border: 2px solid var(--color-dark-gray);
+	border-radius: 5px;
+	color: var(--color-dark-gray);
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
 /* HEADER */
 header {
 	background-color: var(--color-white-smoke);
 	border-bottom: 1px solid #c8c8c8;
 	border-top: 2px solid var(--color-black);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 9;
 }
 
 header > .inner {
@@ -64,7 +84,7 @@ header .sub-menu {
 	display: flex;
 	position: absolute;
 	top: 5px;
-	right: 60px;
+	right: 55px;
 }
 
 header .sub-menu ul.menu {
@@ -145,7 +165,7 @@ header .main-menu {
 	display: flex;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right: 40px;
 	z-index: 1;
 }
 
@@ -235,4 +255,87 @@ header .main-menu .item .item__contents .contents__texture .inner h4:hover {
 header .main-menu .item .item__contents .contents__texture .inner p {
 	color: var(--color-green);
 	margin: 4px 0 14px;
+}
+
+header .badges {
+	position: absolute;
+	top: 154px;
+	left: 54.5%;
+	margin-left: 485px;
+}
+
+header .badges .badge {
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 12px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+
+/* VISUAL */
+.visual {
+	margin-top: 120px;
+	background-image: url(../images/2021_summer2_bg.jpg);
+	background-position: center;
+}
+
+.visual .inner {
+	height: 646px;
+}
+
+.visual .title {
+	position: absolute;
+	top: 75px;
+	left: 30px;
+}
+
+.visual .title .btn {
+	position: absolute;
+	top: 175px;
+	left: 110px;
+}
+
+.visual .title .btn:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+	text-decoration: underline;
+}
+
+.visual .cup1.image {
+	position: absolute;
+	bottom: 45px;
+	right: 330px;
+}
+
+.visual .cup1.text {
+	position: absolute;
+	bottom: 140px;
+	left: 125px;
+}
+
+.visual .cup2.image {
+	position: absolute;
+	bottom: 195px;
+	right: 130px;
+}
+
+.visual .cup2.text {
+	position: absolute;
+	bottom: 110px;
+	left: 585px;
+}
+
+.visual .cup3.image {
+	position: absolute;
+	bottom: 140px;
+	right: -110px;
+}
+
+.visual .cup3.text {
+	position: absolute;
+	bottom: 60px;
+	left: 820px;
+}
+
+.visual .fade-in {
+	opacity: 0;
 }

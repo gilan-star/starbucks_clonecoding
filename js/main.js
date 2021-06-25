@@ -48,3 +48,47 @@ fadeEls.forEach(function (fadeEl, index) {
         opacity: 1
     });
 });
+
+
+// NOTICE SLIDE
+// new Swiper('css Selector', option);
+new Swiper('.notice-line .swiper-container', {
+    direction: 'vertical',
+    autoplay: true,
+    loop: true
+});
+
+new Swiper('.promotion .swiper-container', {
+    slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
+    spaceBetween: 10, // 슬라이드 사이 여백
+    centeredSlides: true,  // 1번 슬라이드가 가운데 보이기
+    loop: true,
+    // autoplay: {
+    //     delay: 5000
+    // }
+    pagination: {
+        el: '.promotion .swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        prevEl: '.promotion .swiper-prev',
+        nextEl: '.promotion .swiper-next'
+    }
+});
+
+// PROMOTION TOGGLE BUTTON
+const promotionEl = document.querySelector('.promotion');
+const promotionTogglBtn = document.querySelector('.toggle-promotion');
+const promotionArrowBtn = promotionTogglBtn.querySelector('img');
+let isHidePromotion = false;
+
+promotionTogglBtn.addEventListener('click', function () {
+    isHidePromotion = !isHidePromotion
+    if (isHidePromotion) {
+        promotionEl.classList.remove('hide');
+        promotionArrowBtn.classList.add('rotated');
+    } else {
+        promotionEl.classList.add('hide');
+        promotionArrowBtn.classList.remove('rotated');
+    }
+});

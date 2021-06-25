@@ -12,6 +12,9 @@
 	--color-medium-gray: #656565;
 	--color-light-gray: #e5e5e5;
 	--color-green: #669900;
+	--color-seagreen: #00704a;
+	--color-deep-green: #1e3932;
+	--color-silver: #c0c0c0;
 
 	/* TRANSITION */
 	--animation-duration: 0.4s;
@@ -33,6 +36,10 @@ img {
 
 a {
 	text-decoration: none;
+}
+
+strong {
+	font-weight: 700;
 }
 
 .inner {
@@ -169,7 +176,8 @@ header .main-menu {
 	z-index: 1;
 }
 
-header .main-menu .item {
+header .main-menu .item:hover {
+	cursor: pointer;
 }
 
 header .main-menu .item .item__name {
@@ -275,7 +283,7 @@ header .badges .badge {
 /* VISUAL */
 .visual {
 	margin-top: 120px;
-	background-image: url(../images/2021_summer2_bg.jpg);
+	background: url(../images/2021_summer2_bg.jpg) no-repeat center/cover;
 	background-position: center;
 }
 
@@ -338,4 +346,291 @@ header .badges .badge {
 
 .visual .fade-in {
 	opacity: 0;
+}
+
+/* NOTICE */
+.notice {
+}
+
+.notice .notice-line {
+	position: relative;
+}
+
+.notice .notice-line .bg-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: var(--color-black);
+}
+
+.notice .notice-line .bg-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: var(--color-white-smoke);
+}
+
+.notice .notice-line .inner {
+	height: 62px;
+	display: flex;
+}
+
+.notice .notice-line .inner__left {
+	display: flex;
+	align-items: center;
+	width: 58%;
+	height: 100%;
+	background-color: var(--color-black);
+}
+
+.notice .notice-line .inner__left h2 {
+	color: var(--color-silver);
+	font-size: 17px;
+	font-weight: 700;
+	margin-right: 20px;
+}
+
+.notice .notice-line .inner__left .swiper-container {
+	height: 100%;
+	flex-grow: 1;
+}
+
+.notice .notice-line .inner__left .swiper-slide {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.notice .notice-line .inner__left .swiper-slide a {
+	color: var(--color-white);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.notice .notice-line .inner__left .swiper-slide a:hover {
+	text-decoration: underline;
+}
+
+.notice .notice-line .inner__left .notice-line__more img {
+	width: 36px;
+	padding: 20px;
+}
+
+.notice .notice-line .inner__right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 42%;
+	height: 100%;
+}
+
+.notice .notice-line .inner__right h2 {
+	color: var(--color-darkslategray);
+	font-size: 17px;
+	font-weight: 700;
+	margin-right: 50px;
+}
+
+.notice .notice-line .inner__right .toggle-promotion img {
+	width: 36px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+.notice .notice-line .inner__right .toggle-promotion img.rotated {
+	transform: rotate(180deg);
+}
+
+.notice .promotion {
+	position: relative;
+	height: 693px;
+	background-color: var(--color-white-smoke);
+	transition: height 0.4s;
+	overflow: hidden;
+}
+
+.notice .promotion.hide {
+	height: 0;
+}
+
+.notice .promotion .swiper-container {
+	width: calc(819px * 3 + 20px);
+	height: 553px;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: calc((819px * 3 + 20px) / -2);
+}
+
+.notice .promotion .swiper-slide {
+	position: relative;
+	opacity: 0.5;
+	transition: opacity 1s;
+}
+
+.notice .promotion .swiper-slide-active {
+	opacity: 1;
+}
+
+.notice .promotion .swiper-slide .btn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 125px;
+}
+
+.notice .promotion .swiper-slide .btn:hover {
+	text-decoration: underline;
+	background-color: var(--color-dark-gray);
+	color: var(--color-white);
+	font-weight: 700;
+}
+
+.notice .promotion .swiper-pagination {
+	bottom: 40px;
+	left: 0;
+	right: 0;
+}
+
+.notice .promotion .swiper-pagination .swiper-pagination-bullet {
+	background-image: url(../images/promotion_slide_pager_off.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 8px;
+	outline: none;
+}
+
+.notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child {
+	margin-right: 0;
+}
+
+.notice .promotion .swiper-pagination .swiper-pagination-bullet-active {
+	background-color: transparent;
+	background-image: url(../images/promotion_slide_pager_on.png);
+}
+
+.notice .promotion .swiper-prev,
+.notice .promotion .swiper-next {
+	position: absolute;
+	top: 260px;
+	width: 51px;
+	height: 51px;
+	border: 2px solid #222;
+	border-radius: 50%;
+	z-index: 1;
+	cursor: pointer;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.7s;
+}
+
+.notice .promotion .swiper-prev {
+	left: 50%;
+	margin-left: -520px;
+}
+
+.notice .promotion .swiper-next {
+	right: 50%;
+	margin-right: -520px;
+}
+
+.notice .promotion .swiper-prev:hover,
+.notice .promotion .swiper-next:hover {
+	background-color: var(--color-white);
+}
+
+/* REWARDS */
+.rewards {
+	background-color: var(--color-deep-green);
+	color: var(--color-white);
+}
+
+.rewards .inner {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	height: 237px;
+	padding: 30px 30px 40px 0;
+	width: 1080px;
+}
+
+.rewards .inner .rewards__logo {
+	margin: 0 40px;
+}
+
+.rewards .inner .rewards__logo img {
+	width: 176px;
+}
+
+.rewards .inner .reward__contents {
+	width: 100%;
+}
+
+.rewards .inner .reward__contents .btn {
+	color: var(--color-white);
+	font-size: 14px;
+	font-weight: 600;
+	border: 2px solid var(--color-white);
+}
+
+.rewards .inner .reward__contents .contents__upper {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 22px;
+	border-bottom: 1px solid var(--color-medium-gray);
+}
+
+.rewards .inner .reward__contents .contents__upper .upper__text h2 {
+	font-size: 26px;
+	font-weight: 400;
+	margin-bottom: 12px;
+}
+
+.rewards .inner .reward__contents .contents__upper .upper__text p {
+	font-size: 17px;
+	margin-bottom: 12px;
+}
+
+.rewards .inner .reward__contents .contents__upper .upper__btns {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 16px;
+	right: 0;
+}
+
+.rewards .inner .reward__contents .contents__upper .btn:first-child {
+	width: 95px;
+	background-color: var(--color-seagreen);
+	border-color: var(--color-seagreen);
+}
+
+.rewards .inner .reward__contents .contents__upper .btn:last-child {
+	width: 80px;
+	margin-left: 9px;
+}
+
+.rewards .inner .reward__contents .contents__lower {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rewards .inner .reward__contents .contents__lower .lower__text {
+}
+
+.rewards .inner .reward__contents .contents__lower .lower__text p {
+	font-size: 14px;
+}
+
+.rewards .inner .reward__contents .contents__lower .lower__btn .btn {
+	width: 185px;
 }

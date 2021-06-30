@@ -104,3 +104,7 @@ spyEls.forEach(function (spyEl) {
         .setClassToggle(spyEl, 'show')
         .addTo(new ScrollMagic.Controller());
 });
+
+// GET FULL YEAR FOR COPYRIGHT
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();

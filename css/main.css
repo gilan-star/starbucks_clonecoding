@@ -14,7 +14,10 @@
 	--color-green: #669900;
 	--color-seagreen: #00704a;
 	--color-deep-green: #1e3932;
+	--color-teal: #075c67;
+	--color-steel-blue: #3e7e89;
 	--color-silver: #c0c0c0;
+	--color-sienna: #815932;
 
 	/* TRANSITION */
 	--animation-duration: 0.4s;
@@ -27,7 +30,6 @@ body {
 	font-weight: 400;
 	line-height: 1.4;
 	font-family: 'Nanum Gothic', sans-serif;
-	height: 3000px;
 }
 
 img {
@@ -61,6 +63,44 @@ strong {
 	box-sizing: border-box;
 	cursor: pointer;
 	transition: 0.4s;
+}
+
+.btn:hover {
+	text-decoration: underline;
+}
+
+.back-to-position {
+	opacity: 0;
+	transition: 2s;
+}
+
+.back-to-position.to-right {
+	transform: translateX(-500px);
+}
+
+.back-to-position.to-left {
+	transform: translateX(500px);
+}
+
+.show .back-to-position {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.show .back-to-position.delay-0 {
+	transition-delay: 0s;
+}
+
+.show .back-to-position.delay-1 {
+	transition-delay: 0.3s;
+}
+
+.show .back-to-position.delay-2 {
+	transition-delay: 0.6s;
+}
+
+.show .back-to-position.delay-3 {
+	transition-delay: 0.9s;
 }
 
 /* HEADER */
@@ -305,7 +345,6 @@ header .badges .badge {
 
 .visual .title .btn:hover {
 	background-color: rgba(255, 255, 255, 0.4);
-	text-decoration: underline;
 }
 
 .visual .cup1.image {
@@ -486,7 +525,6 @@ header .badges .badge {
 }
 
 .notice .promotion .swiper-slide .btn:hover {
-	text-decoration: underline;
 	background-color: var(--color-dark-gray);
 	color: var(--color-white);
 	font-weight: 700;
@@ -633,4 +671,384 @@ header .badges .badge {
 
 .rewards .inner .reward__contents .contents__lower .lower__btn .btn {
 	width: 185px;
+}
+
+/* SEASON PRODUCT */
+.season-product {
+	background: url(../images/2021_summer2_bean_bg.jpg) center/cover no-repeat;
+}
+
+.season-product .inner {
+	display: flex;
+	align-items: center;
+	height: 573px;
+}
+
+.season-product .inner .product__left {
+	position: absolute;
+	left: 180px;
+}
+
+.season-product .inner .product__right {
+	position: absolute;
+	top: 190px;
+	right: 15px;
+}
+
+.season-product .inner .btn {
+	position: absolute;
+	border-color: var(--color-teal);
+	color: var(--color-steel-blue);
+	font-weight: 600;
+	margin-top: 28px;
+}
+
+.season-product .inner .btn:hover {
+	background-color: var(--color-teal);
+	color: var(--color-white);
+}
+
+/* RESERVE COFFEE */
+.reserve-coffee {
+	position: relative;
+	background: url(../images/reserve_sundried_brazil_bg2.jpg);
+	overflow: hidden;
+}
+
+.reserve-coffee::before {
+	display: block;
+	content: '';
+	background: url(../images/reserve_sundried_brazil_bg_shape.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 12px;
+	left: 0;
+	width: 180px;
+	height: 109px;
+}
+
+.reserve-coffee::after {
+	display: block;
+	content: '';
+	background: url(../images/reserve_sundried_brazil_bean4_1.png);
+	background-size: cover;
+	width: 1814px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	right: -13.5%;
+}
+
+.reserve-coffee .inner {
+	height: 400px;
+}
+
+.reserve-coffee .reserve__title {
+	position: relative;
+}
+
+.reserve-coffee .reserve__title img {
+	position: absolute;
+	top: 90px;
+}
+
+.reserve-coffee .reserve__btn .btn {
+	position: absolute;
+	left: 270px;
+	bottom: 90px;
+	border-color: var(--color-sienna);
+	color: var(--color-sienna);
+	font-weight: 400;
+	z-index: 1;
+}
+
+.reserve-coffee .reserve__btn .btn:hover {
+	background-color: var(--color-sienna);
+	color: var(--color-white);
+	font-weight: 600;
+}
+
+/* PICK YOUR FAVORITE */
+.pick-your-favorite {
+	background: url(../images/favorite_bg.jpg) no-repeat center/cover fixed;
+}
+
+.pick-your-favorite .inner {
+	padding: 120px 0;
+	height: 800px;
+	box-sizing: border-box;
+}
+
+.pick-your-favorite .text-group {
+	display: flex;
+	width: 362px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.pick-your-favorite .text-group .title {
+	margin-bottom: 40px;
+}
+
+.pick-your-favorite .text-group .description {
+	margin-bottom: 40px;
+}
+
+.pick-your-favorite .visual-group img {
+	position: absolute;
+	top: 100px;
+	right: -90px;
+}
+
+.pick-your-favorite .more .btn {
+	border-color: var(--color-white);
+	color: var(--color-white);
+}
+
+.pick-your-favorite .more .btn:hover {
+	background-color: var(--color-white);
+	color: var(--color-dark-gray);
+	font-weight: 700;
+}
+
+/* RESERVE MAGAZINE */
+.reserve-magazine {
+}
+
+.reserve-magazine .inner {
+	box-sizing: border-box;
+	width: 1240px;
+	height: 695px;
+	padding: 90px 0;
+	display: flex;
+}
+
+.reserve-magazine .inner::before {
+	content: '';
+	position: absolute;
+	width: 95.3%;
+	height: 0.5px;
+	top: 61.8%;
+	left: 9.5%;
+	background-color: #cccccb;
+}
+
+.reserve-magazine .inner::after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 64%;
+	top: 136px;
+	left: 44%;
+	background-color: #cccccb;
+}
+
+.reserve-magazine .reserve__visual {
+	padding-left: 43.4px;
+	z-index: 1;
+}
+
+.reserve-magazine .reserve__text {
+	padding-top: 180px;
+	padding-left: 80px;
+}
+
+.reserve-magazine .reserve__text .title {
+	margin-bottom: 100px;
+}
+
+.reserve-magazine .reserve__text .logo {
+}
+
+/* FIND THE STORE */
+.find-store {
+	background: url(../images/store_bg.jpg);
+	overflow: hidden;
+}
+
+.find-store .inner {
+	height: 400px;
+}
+
+.find-store .texture1 {
+	position: absolute;
+	top: -10px;
+	left: 420px;
+}
+
+.find-store .texture2 {
+	position: absolute;
+	bottom: 0;
+	right: -60px;
+}
+
+.find-store .picture1 {
+	position: absolute;
+	top: 149px;
+	left: 300px;
+	z-index: 1;
+}
+
+.find-store .picture2 {
+	position: absolute;
+	top: 0;
+	left: 70px;
+}
+
+.find-store .text-group {
+	position: absolute;
+	top: 100px;
+	left: 650px;
+}
+
+.find-store .text-group .title {
+	margin-bottom: 15px;
+}
+
+.find-store .text-group .description {
+	margin-bottom: 30px;
+}
+
+.find-store .text-group .btn:hover {
+	background-color: var(--color-darkslategray);
+	color: var(--color-white);
+	font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+	background-color: var(--color-darkslategray);
+	padding-top: 32px;
+	padding-bottom: 35px;
+}
+
+footer .footer-menus {
+	color: var(--color-white-smoke);
+	margin-bottom: 40px;
+}
+
+footer .footer-menus .menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .footer-menus .menu .title {
+}
+
+footer .footer-menus .menu .title h3 {
+	font-size: 14px;
+	margin-bottom: 13px;
+	cursor: pointer;
+}
+
+footer .footer-menus .menu .title h3:hover {
+	text-decoration: underline;
+}
+
+footer .footer-menus .menu .title > ul {
+}
+
+footer .footer-menus .menu .title > ul li {
+	font-size: 12px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+footer .footer-menus .menu .title > ul li:hover {
+	text-decoration: underline;
+}
+
+footer .footer-awards {
+	background-color: #282828;
+}
+
+footer .footer-awards .inner {
+	display: flex;
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+footer .footer-awards .inner img:hover {
+	cursor: pointer;
+}
+
+footer .footer-aside {
+	color: var(--color-medium-white);
+	font-size: 12px;
+	padding-top: 30px;
+}
+
+footer .footer-aside .inner {
+	width: 1000px;
+}
+
+footer .footer-aside .terms {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .footer-aside .terms li {
+}
+
+footer .footer-aside .terms li::before {
+	content: '';
+	width: 1px;
+	height: 12px;
+	background-color: var(--color-gray);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto -8px;
+}
+
+footer .footer-aside .terms li:first-child:before {
+	display: none;
+}
+
+footer .footer-aside .terms li:first-child {
+	color: #01ac4f;
+	font-weight: 700;
+}
+
+footer .footer-aside .terms li:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+footer .footer-btns {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+footer .footer-btns .btn {
+	border-color: var(--color-white);
+	color: var(--color-white);
+	font-size: 12px;
+	margin: 0 4px;
+	border-radius: 3px;
+}
+
+footer .footer-info {
+	padding-top: 25px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+footer .footer-info span {
+	font-size: 12px;
+	font-weight: 500;
+	color: #8b8b8b;
+	margin: 0 8px;
+}
+
+footer .footer-copyright {
+	color: #8b8b8b;
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

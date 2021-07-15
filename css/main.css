@@ -37,6 +37,10 @@
 	left: 125px;
 }
 
+.visual .cup1.m-text {
+	display: none;
+}
+
 .visual .cup2.image {
 	position: absolute;
 	bottom: 195px;
@@ -49,6 +53,10 @@
 	left: 585px;
 }
 
+.visual .cup2.m-text {
+	display: none;
+}
+
 .visual .cup3.image {
 	position: absolute;
 	bottom: 140px;
@@ -59,6 +67,14 @@
 	position: absolute;
 	bottom: 60px;
 	left: 820px;
+}
+
+.visual .cup3.m-text {
+	display: none;
+}
+
+.visual .m-btn {
+	display: none;
 }
 
 .visual .fade-in {

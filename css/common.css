@@ -70,6 +70,10 @@ strong {
 	text-decoration: underline;
 }
 
+.m-br {
+	display: none;
+}
+
 .back-to-position {
 	opacity: 0;
 	transition: 2s;
@@ -319,6 +323,10 @@ header .badges .badge {
 	margin-bottom: 12px;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
+}
+
+header .toggleBtn {
+	display: none;
 }
 
 /* FOOTER */

@@ -1,5 +1,8 @@
 @media screen and (max-width: 640px) {
 	/* COMMON */
+	body {
+	}
+
 	.inner {
 		width: 100vw;
 		margin: 0 auto;
@@ -8,8 +11,8 @@
 
 	.btn {
 		display: block;
-		width: 115px;
-		padding: 7px 0;
+		width: 110px;
+		padding: 5px 0;
 		border: 2px solid var(--color-dark-gray);
 		border-radius: 4px;
 		color: var(--color-dark-gray);
@@ -86,7 +89,7 @@
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		left: 10px;
+		left: 20px;
 		margin: auto;
 	}
 
@@ -99,7 +102,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		margin-right: 10px;
+		margin-right: 5px;
 	}
 
 	header .toggleBtn li {
@@ -114,21 +117,21 @@
 	}
 
 	header .badges {
-		position: fixed;
-		top: 110px;
+		position: absolute;
+		top: 90px;
 		left: unset;
-		right: 10px;
+		right: 0;
 		margin-left: 0;
 	}
 
 	header .badges .badge {
 		border-radius: 5px;
-		transform: scale(0.9);
+		transform: scale(0.65);
 	}
 
 	/* VISUAL */
 	.visual {
-		margin-top: 60px;
+		margin-top: 40px;
 		background: url(../images/2021_m_summer2_bg.jpg) no-repeat top/cover;
 		height: 259.08vw;
 	}
@@ -139,7 +142,7 @@
 	}
 
 	.visual .title {
-		width: 60%;
+		width: 55%;
 		max-width: none;
 		padding: 0;
 		margin-left: 0;
@@ -241,7 +244,7 @@
 	}
 
 	.notice .notice-line .inner {
-		height: 220px;
+		height: 140px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -250,7 +253,7 @@
 		display: flex;
 		align-items: center;
 		width: 100%;
-		height: 110px;
+		height: 70px;
 		background-color: var(--color-black);
 	}
 
@@ -264,7 +267,7 @@
 	}
 
 	.notice .notice-line .inner__left .swiper-slide {
-		height: 100%;
+		height: 70px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -290,7 +293,7 @@
 		display: flex;
 		background-color: var(--color-white);
 		width: 100%;
-		height: 110px;
+		height: 70px;
 	}
 
 	.notice .notice-line .inner__right h2 {
@@ -422,7 +425,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		box-sizing: border-box;
+		justify-content: center;
 		height: 740px;
 		padding: 40px 0 50px 0;
 		width: 100%;
@@ -433,7 +436,7 @@
 	}
 
 	.rewards .inner .rewards__logo img {
-		width: 200px;
+		width: 150px;
 	}
 
 	.rewards .inner .reward__contents {
@@ -488,13 +491,13 @@
 	}
 
 	.rewards .inner .reward__contents .contents__upper .btn:first-child {
-		width: 170px;
+		width: 35vw;
 		background-color: var(--color-seagreen);
 		border-color: var(--color-seagreen);
 	}
 
 	.rewards .inner .reward__contents .contents__upper .btn:last-child {
-		width: 170px;
+		width: 35vw;
 		margin-left: 9px;
 	}
 
@@ -517,7 +520,7 @@
 	}
 
 	.rewards .inner .reward__contents .contents__lower .lower__btn .btn {
-		width: 350px;
+		width: 70vw;
 	}
 
 	/* SEASON PRODUCT */
@@ -625,14 +628,16 @@
 
 	/* PICK YOUR FAVORITE */
 	.pick-your-favorite {
-		background: url(../images/mob_fav_prod_bg_new.jpg) no-repeat top/cover;
+		background: url(../images/mob_fav_prod_bg_new.jpg) no-repeat center/cover;
 		margin-top: -10px;
 		overflow: hidden;
+		width: 100%;
 	}
 
 	.pick-your-favorite .inner {
 		padding: 120px 0;
-		height: 1130px;
+		width: 100vw;
+		height: 700px;
 		box-sizing: border-box;
 	}
 
@@ -655,27 +660,27 @@
 
 	.pick-your-favorite .text-group .m-title {
 		display: block;
-		width: 350px;
-		margin-top: 600px;
+		width: 250px;
+		margin-top: 300px;
 	}
 
 	.pick-your-favorite .text-group .m-description {
 		display: block;
-		width: 450px;
-		margin-top: 40px;
+		width: 300px;
+		margin-top: 30px;
 	}
 
 	.pick-your-favorite .visual-group img {
 		position: absolute;
-		top: 150px;
+		top: 120px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		width: 450px;
+		width: 320px;
 	}
 
 	.pick-your-favorite .more .btn {
-		margin-top: 40px;
+		margin-top: 20px;
 		border-color: var(--color-white);
 		color: var(--color-white);
 	}
@@ -684,5 +689,249 @@
 		background-color: var(--color-white);
 		color: var(--color-dark-gray);
 		font-weight: 700;
+	}
+
+	/* RESERVE MAGAZINE */
+	.reserve-magazine {
+	}
+
+	.reserve-magazine .inner {
+		box-sizing: border-box;
+		width: 100vw;
+		height: 695px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.reserve-magazine .inner::before {
+		display: none;
+	}
+
+	.reserve-magazine .inner::after {
+		display: none;
+	}
+
+	.reserve-magazine .reserve__visual {
+		padding-left: unset;
+		z-index: 1;
+	}
+
+	.reserve-magazine .reserve__visual img {
+		margin: 0 auto;
+		margin-top: 15%;
+		width: 85%;
+	}
+
+	.reserve-magazine .reserve__text {
+		padding-top: 0;
+		padding-left: 0;
+	}
+
+	.reserve-magazine .reserve__text .to-left {
+		display: none;
+	}
+
+	.reserve-magazine .reserve__text .to-top {
+		display: block;
+		width: 80%;
+	}
+
+	.reserve-magazine .reserve__text .logo {
+	}
+
+	/* FIND THE STORE */
+	.find-store {
+		background: url(../images/store_bg.jpg);
+		width: 100vw;
+		overflow: hidden;
+	}
+
+	.find-store .inner {
+		height: 400px;
+	}
+
+	.find-store .texture1 {
+		position: absolute;
+		top: -10px;
+		left: 420px;
+	}
+
+	.find-store .texture2 {
+		position: absolute;
+		bottom: 0;
+		right: -60px;
+	}
+
+	.find-store .picture1 {
+		position: absolute;
+		top: 149px;
+		left: 300px;
+		z-index: 1;
+	}
+
+	.find-store .picture2 {
+		position: absolute;
+		top: 0;
+		left: 70px;
+	}
+
+	.find-store .text-group {
+		position: absolute;
+		top: 100px;
+		left: 650px;
+	}
+
+	.find-store .text-group .title {
+		margin-bottom: 15px;
+	}
+
+	.find-store .text-group .description {
+		margin-bottom: 30px;
+	}
+
+	.find-store .text-group .btn:hover {
+		background-color: var(--color-darkslategray);
+		color: var(--color-white);
+		font-weight: 700;
+	}
+
+	/* FOOTER */
+	footer {
+		display: none;
+		background-color: var(--color-darkslategray);
+		padding-top: 32px;
+		padding-bottom: 35px;
+	}
+
+	footer .footer-menus {
+		color: var(--color-white-smoke);
+		margin-bottom: 40px;
+	}
+
+	footer .footer-menus .menu {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer .footer-menus .menu .title {
+	}
+
+	footer .footer-menus .menu .title h3 {
+		font-size: 14px;
+		margin-bottom: 13px;
+		cursor: pointer;
+	}
+
+	footer .footer-menus .menu .title h3:hover {
+		text-decoration: underline;
+	}
+
+	footer .footer-menus .menu .title > ul {
+	}
+
+	footer .footer-menus .menu .title > ul li {
+		font-size: 12px;
+		margin-bottom: 5px;
+		cursor: pointer;
+	}
+
+	footer .footer-menus .menu .title > ul li:hover {
+		text-decoration: underline;
+	}
+
+	footer .footer-awards {
+		background-color: #282828;
+	}
+
+	footer .footer-awards .inner {
+		display: flex;
+		box-sizing: border-box;
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+
+	footer .footer-awards .inner img:hover {
+		cursor: pointer;
+	}
+
+	footer .footer-aside {
+		color: var(--color-medium-white);
+		font-size: 12px;
+		padding-top: 30px;
+	}
+
+	footer .footer-aside .inner {
+		width: 1000px;
+	}
+
+	footer .footer-aside .terms {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer .footer-aside .terms li {
+	}
+
+	footer .footer-aside .terms li::before {
+		content: '';
+		width: 1px;
+		height: 12px;
+		background-color: var(--color-gray);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto -8px;
+	}
+
+	footer .footer-aside .terms li:first-child:before {
+		display: none;
+	}
+
+	footer .footer-aside .terms li:first-child {
+		color: #01ac4f;
+		font-weight: 700;
+	}
+
+	footer .footer-aside .terms li:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	footer .footer-btns {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	footer .footer-btns .btn {
+		border-color: var(--color-white);
+		color: var(--color-white);
+		font-size: 12px;
+		margin: 0 4px;
+		border-radius: 3px;
+	}
+
+	footer .footer-info {
+		padding-top: 25px;
+		padding-bottom: 5px;
+		display: flex;
+		justify-content: center;
+	}
+
+	footer .footer-info span {
+		font-size: 12px;
+		font-weight: 500;
+		color: #8b8b8b;
+		margin: 0 8px;
+	}
+
+	footer .footer-copyright {
+		color: #8b8b8b;
+		display: flex;
+		justify-content: center;
+		font-size: 12px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 }

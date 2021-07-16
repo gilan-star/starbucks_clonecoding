@@ -563,8 +563,12 @@
 	padding-left: 80px;
 }
 
-.reserve-magazine .reserve__text .title {
+.reserve-magazine .reserve__text .to-left {
 	margin-bottom: 100px;
+}
+
+.reserve-magazine .reserve__text .to-top {
+	display: none;
 }
 
 .reserve-magazine .reserve__text .logo {

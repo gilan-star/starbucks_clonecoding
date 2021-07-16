@@ -102,4 +102,3 @@ window.addEventListener('scroll',
     }
 )
 
-

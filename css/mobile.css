@@ -1,7 +1,7 @@
 @media screen and (max-width: 640px) {
 	/* COMMON */
 	.inner {
-		width: 100%;
+		width: 100vw;
 		margin: 0 auto;
 		position: relative;
 	}
@@ -99,6 +99,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+		margin-right: 10px;
 	}
 
 	header .toggleBtn li {
@@ -115,6 +116,9 @@
 	header .badges {
 		position: fixed;
 		top: 110px;
+		left: unset;
+		right: 10px;
+		margin-left: 0;
 	}
 
 	header .badges .badge {
@@ -155,7 +159,7 @@
 
 	.visual .cup1.image {
 		top: 15%;
-		left: 60%;
+		left: 55%;
 		width: 73%;
 	}
 
@@ -165,8 +169,8 @@
 
 	.visual .cup1.m-text {
 		display: block;
-		padding-top: 68%;
-		padding-left: 8%;
+		padding-top: 65%;
+		padding-left: 7%;
 		width: 45%;
 	}
 
@@ -209,7 +213,7 @@
 		position: relative;
 		width: 115px;
 		margin: 0 auto;
-		bottom: -30%;
+		bottom: -28%;
 	}
 
 	.visual .m-btn:hover {

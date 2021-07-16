@@ -86,3 +86,20 @@ spyEls.forEach(function (spyEl) {
         .addTo(new ScrollMagic.Controller());
 });
 
+
+// JUST TRYING
+const favBtn = document.getElementById('favBtn');
+
+window.addEventListener('scroll',
+    function() {
+        if (window.innerWidth < 640) {
+            favBtn.classList.remove('to-right');
+            favBtn.classList.add('to-top');
+        } else {
+            favBtn.classList.remove('to-top');
+            favBtn.classList.add('to-right');
+        }
+    }
+)
+
+

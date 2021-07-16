@@ -389,6 +389,14 @@
 	right: 15px;
 }
 
+.season-product .inner .to-top {
+	display: none;
+}
+
+.season-product .inner .to-bottom {
+	display: none;
+}
+
 .season-product .inner .btn {
 	position: absolute;
 	border-color: var(--color-teal);
@@ -486,6 +494,14 @@
 
 .pick-your-favorite .text-group .description {
 	margin-bottom: 40px;
+}
+
+.pick-your-favorite .text-group .m-title {
+	display: none;
+}
+
+.pick-your-favorite .text-group .m-description {
+	display: none;
 }
 
 .pick-your-favorite .visual-group img {

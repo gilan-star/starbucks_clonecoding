@@ -590,6 +590,10 @@
 	left: 420px;
 }
 
+.find-store .m-texture1 {
+	display: none;
+}
+
 .find-store .texture2 {
 	position: absolute;
 	bottom: 0;
@@ -621,6 +625,14 @@
 
 .find-store .text-group .description {
 	margin-bottom: 30px;
+}
+
+.find-store .text-group .m-title {
+	display: none;
+}
+
+.find-store .text-group .m-description {
+	display: none;
 }
 
 .find-store .text-group .btn:hover {

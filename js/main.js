@@ -44,9 +44,9 @@ new Swiper('.promotion .swiper-container', {
     spaceBetween: 10, // 슬라이드 사이 여백
     centeredSlides: true,  // 1번 슬라이드가 가운데 보이기
     loop: true,
-    // autoplay: {
-    //     delay: 5000
-    // }
+    autoplay: {
+        delay: 4000
+    },
     pagination: {
         el: '.promotion .swiper-pagination',
         clickable: true
@@ -87,18 +87,31 @@ spyEls.forEach(function (spyEl) {
 });
 
 
-// JUST TRYING
+// CHANGES WHEN TRASFERED PC TO MOBILE
 const favBtn = document.getElementById('favBtn');
+const reserveBtn = document.querySelector('.reserve-magazine .reserve__text .logo');
+const findBtn = document.querySelector('.find-store .text-group .more');
 
-window.addEventListener('scroll',
-    function() {
-        if (window.innerWidth < 640) {
-            favBtn.classList.remove('to-right');
-            favBtn.classList.add('to-top');
-        } else {
-            favBtn.classList.remove('to-top');
-            favBtn.classList.add('to-right');
-        }
+window.addEventListener('scroll', _.throttle(function () {
+    if (window.innerWidth < 640) {
+        favBtn.classList.remove('to-right');
+        favBtn.classList.add('to-top');
+        reserveBtn.classList.remove('to-left');
+        findBtn.classList.remove('to-left');
+    } else {
+        favBtn.classList.remove('to-top');
+        favBtn.classList.add('to-right');
+        reserveBtn.classList.add('to-left');
+        findBtn.classList.add('to-left');
     }
-)
+}, 300));
 
+
+
+// SLIDER FOR FOOTER'S AWARD (MOBILE)
+
+new Swiper('.m-footer-awards .swiper-container', {
+    direction: 'horizontal',
+    autoplay: true,
+    loop: true
+});

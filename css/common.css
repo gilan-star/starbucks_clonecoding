@@ -372,6 +372,10 @@ footer .footer-menus .menu .title > ul li:hover {
 	text-decoration: underline;
 }
 
+footer .sign-up-btns {
+	display: none;
+}
+
 footer .footer-awards {
 	background-color: #282828;
 }
@@ -385,6 +389,10 @@ footer .footer-awards .inner {
 
 footer .footer-awards .inner img:hover {
 	cursor: pointer;
+}
+
+footer .m-footer-awards {
+	display: none;
 }
 
 footer .footer-aside {

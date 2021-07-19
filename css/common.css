@@ -372,6 +372,10 @@ footer .footer-menus .menu .title > ul li:hover {
 	text-decoration: underline;
 }
 
+footer .footer-menus .menu .title .arrowBtn {
+	display: none;
+}
+
 footer .sign-up-btns {
 	display: none;
 }

@@ -57,6 +57,7 @@ new Swiper('.promotion .swiper-container', {
     }
 });
 
+
 // PROMOTION TOGGLE BUTTON
 const promotionEl = document.querySelector('.promotion');
 const promotionTogglBtn = document.querySelector('.toggle-promotion');
@@ -73,6 +74,7 @@ promotionTogglBtn.addEventListener('click', function () {
         promotionArrowBtn.classList.remove('rotated');
     }
 });
+
 
 // USING SCROLLMAGIC LIBRARY
 const spyEls = document.querySelectorAll('section.scroll-spy');
@@ -107,9 +109,7 @@ window.addEventListener('scroll', _.throttle(function () {
 }, 300));
 
 
-
 // SLIDER FOR FOOTER'S AWARD (MOBILE)
-
 new Swiper('.m-footer-awards .swiper-container', {
     direction: 'horizontal',
     autoplay: true,

@@ -44,11 +44,11 @@
 	}
 
 	.back-to-position.to-top {
-		transform: translateY(500px);
+		transform: translateY(200px);
 	}
 
 	.back-to-position.to-bottom {
-		transform: translateY(-500px);
+		transform: translateY(-200px);
 	}
 
 	.show .back-to-position {
@@ -838,10 +838,10 @@
 	footer .footer-menus .menu {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
 	}
 
 	footer .footer-menus .menu .title {
+		position: relative;
 	}
 
 	footer .footer-menus .menu .title h3 {
@@ -857,7 +857,7 @@
 		text-decoration: underline;
 	}
 
-	footer .footer-menus .menu .title > ul {
+	footer .footer-menus .menu .title ul {
 		display: none;
 	}
 
@@ -871,6 +871,15 @@
 
 	footer .footer-menus .menu .title > ul li:hover {
 		text-decoration: underline;
+	}
+
+	footer .footer-menus .menu .title .arrowBtn {
+		display: block;
+		position: absolute;
+		width: 20px;
+		top: 20px;
+		right: 15px;
+		cursor: pointer;
 	}
 
 	footer .sign-up-btns {

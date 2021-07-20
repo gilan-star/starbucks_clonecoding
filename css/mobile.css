@@ -857,7 +857,7 @@
 		text-decoration: underline;
 	}
 
-	footer .footer-menus .menu .title ul {
+	footer .footer-menus .menu .title ul.hide {
 		display: none;
 	}
 

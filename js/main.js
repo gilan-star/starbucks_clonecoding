@@ -115,3 +115,69 @@ new Swiper('.m-footer-awards .swiper-container', {
     autoplay: true,
     loop: true
 });
+
+// FOOTER MENU
+const footer = document.querySelector('footer');
+const footerMenu = footer.querySelector('.footer-menus .menu');
+const title = footerMenu.querySelectorAll('.title');
+let isHideSubMenu = false;
+
+{title[0].addEventListener('click', handlerSubMenu);
+
+function handlerSubMenu() {
+    const subMenu = title[0].children[1];
+    isHideSubMenu = !isHideSubMenu;
+    if (isHideSubMenu) {
+        subMenu.classList.remove('hide');
+    } else {
+        subMenu.classList.add('hide');
+    }
+};}
+
+{title[1].addEventListener('click', handlerSubMenu);
+
+function handlerSubMenu() {
+    const subMenu = title[1].children[1];
+    isHideSubMenu = !isHideSubMenu;
+    if (isHideSubMenu) {
+        subMenu.classList.remove('hide');
+    } else {
+        subMenu.classList.add('hide');
+    }
+};}
+
+{title[2].addEventListener('click', handlerSubMenu);
+
+function handlerSubMenu() {
+    const subMenu = title[2].children[1];
+    isHideSubMenu = !isHideSubMenu;
+    if (isHideSubMenu) {
+        subMenu.classList.remove('hide');
+    } else {
+        subMenu.classList.add('hide');
+    }
+};}
+
+{title[3].addEventListener('click', handlerSubMenu);
+
+function handlerSubMenu() {
+    const subMenu = title[3].children[1];
+    isHideSubMenu = !isHideSubMenu;
+    if (isHideSubMenu) {
+        subMenu.classList.remove('hide');
+    } else {
+        subMenu.classList.add('hide');
+    }
+};}
+
+{title[4].addEventListener('click', handlerSubMenu);
+
+function handlerSubMenu() {
+    const subMenu = title[4].children[1];
+    isHideSubMenu = !isHideSubMenu;
+    if (isHideSubMenu) {
+        subMenu.classList.remove('hide');
+    } else {
+        subMenu.classList.add('hide');
+    }
+};}
